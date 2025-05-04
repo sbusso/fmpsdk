@@ -1,7 +1,7 @@
 import typing
 
 from .settings import DEFAULT_LINE_PARAMETER
-from .url_methods import __return_json_v3, __validate_series_type, __validate_time_delta
+from .url_methods import __return_json_stable, __return_json_v3, __validate_series_type, __validate_time_delta
 
 
 def __quotes(apikey: str, value: str) -> typing.Optional[typing.List[typing.Dict]]:
