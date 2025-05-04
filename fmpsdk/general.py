@@ -13,8 +13,8 @@ def __quotes(apikey: str, value: str) -> typing.Optional[typing.List[typing.Dict
     :param value: The Ticker(s), Index(es), Commodity(ies), etc. symbol to query for.
     :return: A list of dictionaries.
     """
-    path = f"quotes/{value}"
-    query_vars = {"apikey": apikey}
+    path = f"quotes"
+    query_vars = {"apikey": apikey, "symbol": value}
     return __return_json_stable(path=path, query_vars=query_vars)
 
 
