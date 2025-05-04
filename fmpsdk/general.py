@@ -15,7 +15,7 @@ def __quotes(apikey: str, value: str) -> typing.Optional[typing.List[typing.Dict
     """
     path = f"quotes/{value}"
     query_vars = {"apikey": apikey}
-    return __return_json_v3(path=path, query_vars=query_vars)
+    return __return_json_stable(path=path, query_vars=query_vars)
 
 
 def quote(
